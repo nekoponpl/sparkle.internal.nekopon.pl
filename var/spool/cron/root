@@ -1,3 +1,3 @@
 */15 * * * * /usr/local/bin/secure-time-sync
 0 0 1 * *    /root/certbot/gen.sh
-0 */8 * * *  /usr/local/bin/update-hosts
+0 */8 * * *  env RECIPE=master /usr/local/bin/update-hosts
