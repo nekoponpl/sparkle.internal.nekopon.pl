@@ -1,0 +1,6 @@
+[Match]
+Name = wg0
+
+[Network]
+Address=fd69:6969:6969::6/48
+Address=192.168.69.6/24

@@ -1,0 +1,1 @@
+*/5 * * * * php /usr/share/webapps/nextcloud/cron.php

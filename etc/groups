@@ -1,0 +1,2 @@
+nextcloud:x:969:photoprism
+redis:x:967:nextcloud

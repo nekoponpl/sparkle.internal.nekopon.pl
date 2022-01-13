@@ -1,0 +1,14 @@
+[NetDev]
+Name = wg0
+Kind = wireguard
+Description = Nekopon VPN
+
+[WireGuard]
+PrivateKey = 
+
+[WireGuardPeer]
+PublicKey = 
+Endpoint = 188.68.55.97:51820
+AllowedIPs=fd69:6969:6969::/48, 192.168.69.0/24
+PersistentKeepalive = 15
+RouteTable = off

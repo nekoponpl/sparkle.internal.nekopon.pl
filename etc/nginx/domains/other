@@ -1,0 +1,9 @@
+server {
+	listen 80 backlog=4096 default_server;
+	listen [::]:80 backlog=4096 default_server;
+	server_name _;
+
+	root /var/empty;
+
+	return 301 https://$host$request_uri;
+}

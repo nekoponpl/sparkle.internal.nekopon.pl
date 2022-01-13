@@ -1,0 +1,23 @@
+# sparkle-rootfs
+UUID=1edef55d-d247-4d09-ad40-dbb8f98813a6 / ext4 rw,noatime 0 1
+
+# sparkle-efi
+UUID=4113-F0CC /boot/efi vfat rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,nosuid,nodev,noexec 0 2
+
+# home bind
+/home /home ext4 defaults,bind,nosuid,noexec,nodev 1 2
+
+# var bind
+/var /var ext4 defaults,bind,nosuid 1 2
+
+# tmpfs
+tmpfs /tmp tmpfs defaults,nosuid,nodev,noexec 0 0
+
+# proc
+proc /proc proc nosuid,nodev,noexec,hidepid=2,gid=proc 0 0
+
+# shmfs
+shmfs /dev/shm tmpfs nodev,nosuid,noexec 0 0
+
+# zram
+/dev/zram0 none swap defaults 0 0
